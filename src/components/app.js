@@ -6,9 +6,7 @@ import Search from "./search.js";
 import Filters from "./filters.js";
 import MovieList from "./movie-list.js";
 // creando componente stylizado para mi app
-const AppStyled = styled.div`
-  background-color: black;
-`;
+const AppStyled = styled.div``;
 
 class App extends Component {
   render() {
