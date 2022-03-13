@@ -24,13 +24,14 @@ body {
   display: flex;
   gap: 21px;
   padding: 1em 0 2em;
+  flex-wrap: wrap;
 }
 .actions > * {
   position: relative;
 }
 .actions > *::after {
   content: "/";
-  color: #3f69ff;
+  color: #ffffff;
   display: inline-flex;
   position: absolute;
   left: calc(100% + 10px);
@@ -81,6 +82,7 @@ body {
 .movie {
   position: relative;
   transition: 1s;
+  color: white;
 }
 .movie.recommended img {
   border: 2px solid goldenrod;
@@ -123,4 +125,26 @@ body {
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0 0 0 2px #3f69ff;
+}
+
+@media screen and (max-width: 576px) {
+  .actions .input-mb {
+    font-size: 0.8rem !important;
+    width: 170px;
+  }
+  .actions {
+    padding: 1em 1em 2em 1em;
+  }
+  .actions > *::after {
+    display: none;
+  }
+  form {
+    min-width: auto !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .actions {
+    padding: 1em 1em 2em 1em;
+  }
 }

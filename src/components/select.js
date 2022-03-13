@@ -1,8 +1,10 @@
-import styled from '../lib/styled-components.js'
-
+import styled from "../lib/styled-components.js";
 
 export default styled.select`
   font-size: 1rem;
-  padding: 0 1em;
-  border-radius: .5em;
-`
+  border-radius: 0.5em;
+  background-color: #0e3fa9;
+  border: transparent;
+  color: white;
+  padding: 1rem;
+`;
