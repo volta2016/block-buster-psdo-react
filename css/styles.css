@@ -24,7 +24,7 @@ body {
 .actions {
   display: flex;
   gap: 21px;
-  padding: 1em 0 2em;
+  padding: 2em 2em;
   flex-wrap: wrap;
 }
 .actions > * {
@@ -145,7 +145,4 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .actions {
-    padding: 1em 1em 2em 1em;
-  }
 }
